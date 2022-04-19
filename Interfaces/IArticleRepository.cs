@@ -1,6 +1,6 @@
 ﻿using CSharpAngular.Api.Entities;
 
-namespace CSharpAngular.Interfaces
+namespace CSharpAngular.Api.Interfaces
 {
     public interface IArticleRepository
     {

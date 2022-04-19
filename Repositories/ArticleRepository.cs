@@ -1,9 +1,8 @@
-﻿using CSharpAngular.Api;
-using CSharpAngular.Api.Entities;
-using CSharpAngular.Interfaces;
+﻿using CSharpAngular.Api.Entities;
+using CSharpAngular.Api.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace CSharpAngular.Repositories
+namespace CSharpAngular.Api.Repositories
 {
     public class ArticleRepository : RepositoryBase<Article>, IArticleRepository
     {

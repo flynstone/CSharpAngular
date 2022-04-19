@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace CSharpAngular.Interfaces
+namespace CSharpAngular.Api.Interfaces
 {
     public interface IRepositoryBase<T>
     {

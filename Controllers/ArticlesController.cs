@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
 using CSharpAngular.Api.DataTransferObjects.Articles;
 using CSharpAngular.Api.Entities;
-using CSharpAngular.Interfaces;
-using Microsoft.AspNetCore.Authorization;
+using CSharpAngular.Api.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CSharpAngular.Controllers

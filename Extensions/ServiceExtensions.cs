@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
-using CSharpAngular.Interfaces;
-using CSharpAngular.Repositories;
+using CSharpAngular.Api.Interfaces;
+using CSharpAngular.Api.Repositories;
+using CSharpAngular.Api.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace CSharpAngular.Api.Extensions
@@ -12,6 +13,7 @@ namespace CSharpAngular.Api.Extensions
             services.AddAutoMapper(typeof(MappingProfile));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IArticleRepository, ArticleRepository>();
+            services.AddScoped<ITokenService, TokenService>();
         }
 
         public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration config)

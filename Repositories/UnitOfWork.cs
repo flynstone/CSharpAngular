@@ -1,7 +1,6 @@
-﻿using CSharpAngular.Api;
-using CSharpAngular.Interfaces;
+﻿using CSharpAngular.Api.Interfaces;
 
-namespace CSharpAngular.Repositories
+namespace CSharpAngular.Api.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {

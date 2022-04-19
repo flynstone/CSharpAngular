@@ -10,6 +10,7 @@ namespace CSharpAngular.Api
         {
         }
 
+        public DbSet<AppUser> Users { get; set; }
         public DbSet<Article> Articles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)

@@ -1,4 +1,4 @@
-﻿namespace CSharpAngular.Interfaces
+﻿namespace CSharpAngular.Api.Interfaces
 {
     public interface IUnitOfWork
     {

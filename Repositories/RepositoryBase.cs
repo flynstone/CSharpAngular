@@ -1,9 +1,8 @@
-﻿using CSharpAngular.Api;
-using CSharpAngular.Interfaces;
+﻿using CSharpAngular.Api.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace CSharpAngular.Repositories
+namespace CSharpAngular.Api.Repositories
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
