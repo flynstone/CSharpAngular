@@ -2,10 +2,12 @@
 using CSharpAngular.Api.DataTransferObjects.Articles;
 using CSharpAngular.Api.Entities;
 using CSharpAngular.Api.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CSharpAngular.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ArticlesController : ControllerBase

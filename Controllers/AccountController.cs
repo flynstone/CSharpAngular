@@ -1,6 +1,7 @@
 ﻿using CSharpAngular.Api.DataTransferObjects.Users;
 using CSharpAngular.Api.Entities;
 using CSharpAngular.Api.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
@@ -18,6 +19,7 @@ namespace CSharpAngular.Api.Controllers
             _tokenService = tokenService;
         }
 
+        [AllowAnonymous]
         [HttpPost("register")]
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
@@ -45,6 +47,7 @@ namespace CSharpAngular.Api.Controllers
             };
         } 
 
+        [AllowAnonymous]
         [HttpPost("login")]
         public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
         {
